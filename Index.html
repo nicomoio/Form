@@ -1,0 +1,72 @@
+  
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form NUCBA</title>
+  </head>
+  <body>
+    <h1>Fotmulario NUCBA</h1>
+    <form action="./form-result.php" method="POST" target="_self">
+    
+      <ul>
+        <li>          
+          <label for="nombre">Nombre: </label> <br>
+          <input type="text" name="nombre"/>
+        </li>
+        <li>
+          <label for="apellido">Apellido: </label> <br> 
+          <input type="text" name="apellido"/>
+        </li>
+        <li>
+          <label for="edad">Edad: </label> <br> 
+          <input type="number" name="edad"/> <br><br>
+        </li>
+
+        <li>
+          <label for="Mail">E-mail:</label> <br> 
+          <input type="text" id="Mail" name="Mail"/> <br>
+          <label for="Contraseña">Contraseña:</label> <br> 
+          <input type="password" id="Contraseña"  name="Contraseña"/> <br><br>
+        </li>
+
+        <li>
+          <label for="checkbox">Ocupación:</label>
+          <br><input type="checkbox" id="Ocupacion1" name="Ocupacion1" value="Estudiante"/>
+          <label for="Ocupacion1"> Estudiante</label> 
+          <input type="checkbox" id="Ocupacion2" name="Ocupacion2" value="Profesional"/>
+
+          <label for="Ocupacion2"> Profesional</label>
+          <input type="checkbox"0 id="Ocupacion3" name="Ocupacion3" value="Otro"/>
+          <label for="Ocupacion3"> Otro</label><br><br>
+        </li>
+
+        <li>
+          <label for="contacto"> Horario de contacto:</label><br>
+          <select name="contacto">
+            <option value="Mañana"> Por la mañana</option>
+            <option value="Medidía">Al mediodía</option>
+            <option value="Tarde">Por la tarde</option>
+            </select> <br><br>
+        </li>
+
+        <li>
+          <textarea name="comment" rows="2" cols="25">Dejar un comentario...</textarea> <br><br>
+        </li>
+
+        <li>
+          <label for="Email">¿Desea recibir más información en su correo? :</label> <br>
+          <input type="radio" id="Si" name="Email" value="Si"/>
+          <label for="Si">Si</label>
+          <input type="radio" id="No" name="Email" value="No"/>
+          <label for="No">No</label><br /><br />
+        </li>
+
+        <li>
+          <input type="submit" value="Enviar">
+        </li>
+      </ul>
+    </form>
+  </body>
+</html>
